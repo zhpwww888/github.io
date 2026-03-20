@@ -36,7 +36,7 @@
     }
     #chart { 
       width: 100%; 
-      height: 700px; 
+      height: 800px; 
       margin-bottom: 30px;
     }
 
@@ -55,8 +55,8 @@
     }
     .stats-grid { 
       display: grid; 
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-      gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+      gap: 10px;
     }
     .stats-card { 
       background: #fff; 
@@ -188,7 +188,13 @@
           return html;
         }
       },
-      legend: { type: 'scroll', bottom: 10 },
+      legend: {
+        type: 'scroll',
+        bottom: 20,
+        pageIconSize: 12,
+        pageTextStyle: { fontSize: 11 },
+        textStyle: { fontSize: 11 }
+      },
       grid: { left: '3%', right: '4%', bottom: '15%', top: '8%' },
       xAxis: { type: 'category', data: [] },
       yAxis: {
